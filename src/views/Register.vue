@@ -102,7 +102,7 @@ export default {
   },
   methods: {
     submitHandler() {
-      console.log(this.register);
+      // console.log(this.register);
 
       // Firebase Auth for sign in
       firebase
@@ -119,9 +119,9 @@ export default {
               // setTimeout(function () {  } , 2000);
             });
         })
-        .catch(err => {
+        .catch(() => {
           // For debugging purposes
-          console.log(err);
+          // console.log(err);
         });
 
       // Resets the form after submission

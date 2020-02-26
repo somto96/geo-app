@@ -79,16 +79,16 @@ export default {
   },
   methods: {
     submitHandler() {
-      console.log(this.login);
+      // console.log(this.login);
       firebase
         .auth()
         .signInWithEmailAndPassword(this.login.email, this.login.password)
-        .then(data => {
-          console.log(data);
+        .then(()=> {
+          // console.log(data);
           this.$router.push({ name: "Mapview" });
         })
-        .catch(err => {
-          console.log(err);
+        .catch(()=> {
+          // console.log(err);
           this.error =
             "Sorry we couldn't find an account with those credentials.";
         });

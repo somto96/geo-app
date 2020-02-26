@@ -4899,7 +4899,7 @@ export default {
   },
   methods: {
     submitHandler() {
-      console.log(this.mapview);
+      // console.log(this.mapview);
     },
     modalFormHandler() {
       console.log(this.form);
