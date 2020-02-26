@@ -4942,10 +4942,10 @@ export default {
       for (var i = 0; i < allCoordinates.length; i++) {
         var value = allCoordinates[i];
         // console.log(value);
-        for (var j = 0; j < allCoordinates[i].length; j++) {
+        for (var j = 0; j < value.length; j++) {
           var answer = allCoordinates[i][j];
           // console.log(answer);
-          for (var k = 0; k < allCoordinates[i][j].length; k++) {
+          for (var k = 0; k < answer.length; k++) {
             var realAnswer = allCoordinates[i][j][k];
             realAnswer.reverse();
             // console.log(realAnswer);
