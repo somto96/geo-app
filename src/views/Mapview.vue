@@ -29,9 +29,7 @@
           <div class="uk-margin">
             <div class="uk-form-controls">
               <!-- <vk-button type="secondary" class="uk-width-1-1">Register</vk-button> -->
-              <a href="https://app.powerbi.com/reportEmbed?reportId=98a85198-1a30-49da-9827-fc898505ff4b&autoAuth=true&ctid=2e34a9ca-3c80-4981-8bdf-f2c507a95cf7&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWFmcmljYS1ub3J0aC1hLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" target="_blank">
-                <button class="uk-button uk-button-secondary uk-width-1-1" href>Visualize</button>
-              </a>
+              <button class="uk-button uk-button-secondary uk-width-1-1">Visualize</button>
             </div>
           </div>
         </form>
@@ -4900,6 +4898,7 @@ export default {
   methods: {
     submitHandler() {
       // console.log(this.mapview);
+      this.$router.push({ path: "/visualize" })
     },
     modalFormHandler() {
       // console.log(this.form);
