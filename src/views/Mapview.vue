@@ -4902,7 +4902,7 @@ export default {
       // console.log(this.mapview);
     },
     modalFormHandler() {
-      console.log(this.form);
+      // console.log(this.form);
       this.dialogFormVisible = false;
     },
     layerChanged(layerId, active) {
@@ -4941,14 +4941,14 @@ export default {
       var allCoordinates = coordinates;
       for (var i = 0; i < allCoordinates.length; i++) {
         var value = allCoordinates[i];
-        console.log(value);
+        // console.log(value);
         for (var j = 0; j < allCoordinates[i].length; j++) {
           var answer = allCoordinates[i][j];
-          console.log(answer);
+          // console.log(answer);
           for (var k = 0; k < allCoordinates[i][j].length; k++) {
             var realAnswer = allCoordinates[i][j][k];
             realAnswer.reverse();
-            console.log(realAnswer);
+            // console.log(realAnswer);
             array.push(realAnswer);
             // this.newCoordinates.push(realAnswer);
             // console.log(this.newCoordinates);
@@ -4961,7 +4961,7 @@ export default {
       this.layers[1].features.forEach(feature => {
         // console.log(feature.geometry.coordinates);
         var newPts = feature.geometry.coordinates.reverse();
-        console.log(newPts);
+        // console.log(newPts);
         // console.log(coordinate);
         array.push(newPts);
       });
